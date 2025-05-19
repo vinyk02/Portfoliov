@@ -1,0 +1,87 @@
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fffde7);
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      background: linear-gradient(135deg, #00bcd4, #ffeb3b);
+      color: #000;
+      padding: 30px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px;
+      background: #00796b;
+      animation: fadeIn 1.5s ease-in;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffeb3b;
+      transform: scale(1.1);
+    }
+    section {
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      animation: fadeInUp 1s ease-in;
+      transition: transform 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      color: #00796b;
+      border-bottom: 3px solid #ffeb3b;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004d40;
+      color: #fff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
